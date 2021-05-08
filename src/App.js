@@ -99,7 +99,7 @@ function ChatRoom() {
         />
 
         <button type="submit" disabled={!formValue}>
-          🕊️
+          <span role="img">!!</span>
         </button>
       </form>
     </>
@@ -118,6 +118,7 @@ function ChatMessage(props) {
           src={
             photoURL || "https://api.adorable.io/avatars/23/abott@adorable.png"
           }
+          alt=""
         />
         <p>{text}</p>
       </div>
